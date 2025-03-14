@@ -1,0 +1,105 @@
+/* style.css */
+
+/* General Layout and Text */
+body {
+    background-color: #ffffff; /* White background */
+    color: #333; /* Dark text for readability */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    color: #007BFF; /* Blue headings */
+    margin-top: 0;
+}
+
+/* Links and Buttons */
+a {
+    color: #007BFF; /* Blue links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Forms */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/* Submit Buttons and General Buttons */
+input[type="submit"],
+button {
+    background-color: #007BFF;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover,
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Navigation Bars */
+nav,
+header,
+footer {
+    background-color: #f2faff; /* Very light blue */
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+}
+
+/* Lists */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f4faff; /* Very light blue background for list items */
+    border-radius: 4px;
+}
+
+/* Tables */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+th {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+/* Container to center content (optional) */
+.container {
+    max-width: 960px;
+    margin: auto;
+    padding: 20px;
+}

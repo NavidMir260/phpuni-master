@@ -1,0 +1,78 @@
+<html>
+
+    <form action="" method ="post">
+    <label for="Snumber">please enter one side of a squer</br></label>
+    <input id="Snumber" type="number" name="Snumber">
+
+
+    </form>
+
+    <form action="" method ="post">
+    <label for="T1number"><hr/>please enter one side of a triangle</br></label>
+    <input id="T1number" type="number" name="T1number">
+    <label for="T2number"></br>please enter the second side of the triangle</br></label>
+    <input id="T2number" type="number" name="T2number">
+    <label for="Rnumber"></br>please enter the rule of the triangle</br></label>
+    <input id="Rnumber" type="number" name="Rnumber">
+    <label for="Hnumber"></br>please enter the height of the triangle</br></label>
+    <input id="Hnumber" type="number" name="Hnumber">
+
+    </form>
+
+    <form action="" method ="post">
+    <label for="Anumber"><hr/>please enter your age in years</br></label>
+    <input id="Anumber" type="number" name="Anumber">
+    <input type="submit" name="calculate" value="calculate"><hr/>
+
+
+    </form>
+
+
+</html>
+
+
+<?php
+
+if($_SERVER['REQUEST_METHOD'] === 'POST'){
+    $Snumber = $_POST['Snumber'];
+    $Snumber = intval($Snumber);
+
+    $squer_area = $Snumber * $Snumber;
+    echo "the squer area with" ." " . "$Snumber" . " " . "meter's side is equal to" . " " . "$squer_area" . "</br>";
+    $squer_perimeter = $Snumber * 4;
+    echo "the squer perimeter with" ." " . "$Snumber" . " " . "meter's side is equal to" . " " . "$squer_perimeter" . "</br>";
+
+
+    $T1number = $_POST['T1number'];
+    $T2number = $_POST['T2number'];
+    $Rnumber = $_POST['Rnumber'];
+    $Hnumber = $_POST['Hnumber'];
+
+
+    $T1number = intval($T1number);
+    $T2number = intval($T2number);
+    $Rnumber = intval($Rnumber);
+    $Hnumber = intval($Hnumber);
+
+    $triangl_area = ($Hnumber * $Rnumber) / 2;
+    echo "the triangl area is equal to" . "$triangl_area" . "</br>";
+    $triangl_perimeter = $T1number + $T2number + $Rnumber;
+    echo "the triangl perimeter is equal to" . " " . "$triangl_perimeter" . "</br>";
+
+
+
+
+    $Anumber = $_POST['Anumber'];
+    $Anumber = intval($Anumber);
+
+    $months = $Anumber * 12;
+    echo "$Anumber" . " " . "years are" . " " . "$months";
+    $days = $Anumber * 365.25;
+    echo "$Anumber" . " " . "years are" . " " . "$days";
+
+
+}
+
+
+
+?>
